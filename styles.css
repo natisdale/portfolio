@@ -1,0 +1,51 @@
+html {
+    background: rgb(194, 205, 221);
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+nav * {
+    color: black;
+    width: 100%;
+    list-style-type: none;
+    text-decoration-line: none;
+    height: 2.5rem;
+    padding: 0;
+}
+nav li {
+    display: inline;
+    margin: .5rem;
+    padding: .5rem;
+}
+.current-page {
+    background-color: aliceblue;
+}
+main {
+    position: relative;
+}
+h1 {
+    float: left;
+}
+#headshot {
+    float: right;
+    height: 5rem;
+    width: 5rem;
+    margin: 0px;
+    padding: 0px;
+}
+#work-history, #education {
+    float: left;
+    width: 70%;
+}
+#education {
+    clear: both;
+}
+#skills, #certifications, #honors {
+    float: right;
+    width: 30%;
+    padding-top: 3rem;
+}
+footer {
+    clear: both;
+}
+hr {
+    clear: both;
+}

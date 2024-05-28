@@ -4,32 +4,63 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>About Nathan Tisdale</title>
-        <link rel="stylesheet" href="styles.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
-    
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">    
+        <style>
+            html {
+                font-family: "Plus Jakarta Sans", sans-serif;
+            }
+            main {
+                position: relative;
+            }
+            h1 {
+                float: left;
+            }
+            nav {
+                clear: both;
+            }
+            #headshot {
+                float: right;
+                height: 5rem;
+                width: 5rem;
+                margin: 0px;
+                padding: 0px;
+            }
+            #work-history, #education {
+                float: left;
+                width: 70%;
+            }
+            #education {
+                clear: both;
+            }
+            #skills, #certifications, #honors {
+                float: right;
+                width: 30%;
+                padding-top: 3rem;
+            }
+            footer {
+                clear: both;
+            }
+            hr {
+                clear: both;
+            }
+            a {
+                color: black;
+                text-decoration-line: none;
+            }
+        </style>
     </head>
 
     <body>
         <header>
-            <h1>About Nathan</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Projects</a></li>
-                    <li class="current-page"><a href="about.html">About</a></li>
-                    <li><a href="resume.html">Print</a></li>
-                </ul>
-            </nav>
-            <figure>
-                <img id="headshot" src="assets/images/nathan-200.png" alt="Nathan Tisdale" />
-            </figure>
-            
+            <h1>Nathan Tisdale</h1>
+            <nav><a href="https://www.tisdale.info">www.tisdale.info</a></p></nav>
             <hr />
         </header>
         <main>
             <h2>Summary</h2>
-                <p>Software Developer in Test (SDET) driven by the User Experience (UX).  Proven expertise working with Agile teams to test and automate Android, iOS and Web apps.  Familiar with Software Developent Life Cycle (SDLC) from product design through product retirement</p>
+                <p>Software Developer in Test driven by the User Experience (UX).  Proven expertise working with Agile teams to test and automate Android, iOS and Web apps.</p>
             <article id="work-history">    
                 <h2 >Work History</h2>
                     <h3>ClockShark<br/>
@@ -67,9 +98,11 @@
                                 <li>Trained and mentored Level 1 & 2 engineers</li>
                                 <li>Presented sessions at ArcSight user conferences and webinars</li>
                             </ul>
+                
             </article>
+            
             <aside id="skills">
-                <h3 >Skills</h3>
+                <h3>Skills</h3>
                 <ul>
                     <li>SDLC
                         <ul>
@@ -133,6 +166,7 @@
                     <li>Business</li>
                     <li>Computer Science</li>
                 </ul>
+                
                 <h3>Associate in Arts</h3>
                 <a href="https://www.butte.edu"><h4>Butte College</h4></a>
                 <h5>Major</h5>
@@ -159,13 +193,11 @@
                         <li><a href="https://www.youracclaim.com/badges/69a84350-f18f-4551-99b7-8d18c9a64b76?source=linked_in_profile">Python</a></li>
                         <li><a href="https://www.youracclaim.com/badges/0f1290e2-340f-4b81-bc90-d8e09fbdc363/public_url">Secure Software Lifecycle</a></li>
                         <li><a href="https://www.youracclaim.com/badges/1ceb003e-4dd5-47db-bf43-ea9c7dae3821/public_url">Techincal Training</a></li>
-
                     </ul>
             </aside>
         </main>
         <footer>
             <hr />
-            <a name="linkedin" href="https://www.linkedin.com/in/nathantisdale/"><img height="25" src="https://content.linkedin.com/content/dam/me/brand/en-us/brand-home/illustrations/dsk-e6.svg.original.svg" alt="Follow on LinkedIn"/></a>
             <p>© Nathan Tisdale. All rights reserved</p>
         </footer>
     </body>

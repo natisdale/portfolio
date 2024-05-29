@@ -22,10 +22,10 @@ main {
     position: relative;
 }
 h1 {
-    float: left;
+    float: right;
 }
 #headshot {
-    float: right;
+    float: left;
     height: 5rem;
     width: 5rem;
     margin: 0px;
@@ -48,4 +48,12 @@ footer {
 }
 hr {
     clear: both;
+}
+.project-card {
+    padding: 10px;
+}
+.project-image {
+    height: 300px;
+    width: 400px;
+    object-fit: cover;
 }

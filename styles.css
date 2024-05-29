@@ -2,27 +2,33 @@ html {
     background: rgb(194, 205, 221);
     font-family: "Plus Jakarta Sans", sans-serif;
 }
-nav * {
-    color: black;
-    width: 100%;
+nav > ul {
+    display: inline-flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+nav > ul > li {
+    padding: .25rem;
     list-style-type: none;
+}
+nav a {
     text-decoration-line: none;
-    height: 2.5rem;
-    padding: 0;
+    color: black;
 }
-nav li {
-    display: inline;
-    margin: .5rem;
-    padding: .5rem;
-}
+
 .current-page {
     background-color: aliceblue;
 }
 main {
     position: relative;
 }
-h1 {
-    float: right;
+.projects {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.project-card {
+    
 }
 #headshot {
     float: left;

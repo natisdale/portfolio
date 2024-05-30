@@ -28,9 +28,6 @@ main {
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-.project-card {
-    
-}
 #headshot {
     float: left;
     height: 5rem;
@@ -63,4 +60,15 @@ hr {
     height: 300px;
     width: 400px;
     object-fit: cover;
+}
+@media (max-width: 700px) {
+    #skills, #certifications, #honors {
+        float: none;
+    }
+    .project-card {
+        padding: 3px;
+    }
+    .project-image {
+        width: 95%;
+    }
 }

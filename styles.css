@@ -67,6 +67,7 @@ hr {
     }
     #skills, #certifications, #honors {
         float: none;
+        padding-top: 0rem;
     }
     .project-card {
         padding: 3px;

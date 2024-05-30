@@ -62,6 +62,9 @@ hr {
     object-fit: cover;
 }
 @media (max-width: 700px) {
+    #resume {
+        display: none;
+    }
     #skills, #certifications, #honors {
         float: none;
     }

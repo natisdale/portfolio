@@ -1,5 +1,6 @@
 html {
-    background: rgb(194, 205, 221);
+    background: black;
+    color: aliceblue;
     font-family: "Plus Jakarta Sans", sans-serif;
 }
 nav > ul {
@@ -13,11 +14,18 @@ nav > ul > li {
 }
 nav a {
     text-decoration-line: none;
-    color: black;
+    color: aliceblue;
 }
-
+a {
+    color: deepskyblue;
+}
+h1 {
+    color: rgb(194, 205, 221);
+    font-size: xx-large;
+    font-weight: bold;
+}
 .current-page {
-    background-color: aliceblue;
+    background-color: darkred;
 }
 main {
     position: relative;
@@ -34,6 +42,10 @@ main {
     width: 5rem;
     margin: 0px;
     padding: 0px;
+}
+#resume {
+    font-size: x-small;
+    font-style: italic;
 }
 #work-history, #education {
     float: left;
@@ -55,11 +67,18 @@ hr {
 }
 .project-card {
     padding: 10px;
+    
+}
+.project-card > figure {
+    
 }
 .project-image {
     height: 300px;
     width: 400px;
     object-fit: cover;
+    border-width: 3px;
+    border-style: none;
+    border-color: darkslategray;
 }
 @media (max-width: 700px) {
     #resume {
@@ -71,8 +90,10 @@ hr {
     }
     .project-card {
         padding: 3px;
+        
     }
     .project-image {
         width: 95%;
+        
     }
 }

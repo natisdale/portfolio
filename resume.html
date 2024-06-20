@@ -10,40 +10,48 @@
         <style>
             html {
                 font-family: "Plus Jakarta Sans", sans-serif;
+                font-size: 11pt;
+            }
+            header {
+                display: grid;
+                grid-template-rows: 2rem;
+                grid-template-columns: 700px 175px;
+                align-items: center;
             }
             main {
-                position: relative;
+                display: grid;
+                grid-template-rows: 3rem 50rem 18rem;
+                grid-template-columns: 700px 220px;
             }
-            h1 {
-                float: left;
+            #summary {
+                grid-column: span 2;
+                display: flex;
             }
-            nav {
-                clear: both;
+            #summary h2 {
+                margin-right: 4rem;
             }
-            #headshot {
-                float: right;
-                height: 5rem;
-                width: 5rem;
-                margin: 0px;
-                padding: 0px;
-            }
-            #work-history, #education {
-                float: left;
-                width: 70%;
+            #summary p {
+                text-align: justify;
             }
             #education {
-                clear: both;
+                grid-row: 2;
+                grid-column: 1;
+                grid-row: span 2;
             }
-            #skills, #certifications, #honors {
-                float: right;
-                width: 30%;
-                padding-top: 3rem;
+            #education {
+                grid-column: 1;
             }
-            footer {
-                clear: both;
+            #skills {
+                grid-column: 2;
+                grid-row: 2
             }
-            hr {
-                clear: both;
+            #certifications {
+                grid-column: 2;
+                grid-row: 3
+            }
+            #honors {
+                grid-column: 2;
+                grid-row: 4;
             }
             a {
                 color: black;
@@ -56,15 +64,15 @@
         <header>
             <h1>Nathan Tisdale</h1>
             <nav><a href="index.html">www.tisdale.info</a></p></nav>
-            <hr />
         </header>
         <main>
+            <div id="summary">
             <h2>Summary</h2>
-                <p>Software Developer in Test driven by the User Experience (UX).  Proven expertise working with Agile teams to test and automate Android, iOS and Web apps.</p>
+                <p>Software Developer in Test (SDET) experienced working with Agile development teams to assure software quality through testing and test automation of Android, iOS and Web apps.</p>
+            </div>
             <article id="work-history">    
                 <h2 >Work History</h2>
-                    <h3>ClockShark<br/>
-                        August 2021 to May 2024</h3>
+                    <h3>ClockShark - August 2021 to May 2024</h3>
                         <h4>Senior Software Quality Assurance Engineer</h4>
                         <ul>
                             <li>Created and maintained mobile test automation framework</li>
@@ -73,14 +81,12 @@
                             <li>Evaluated and integrated Device Hosting services for mobile testig</li>
                             <li>Helped drive defect rate down by 50% (1.24 -> 0.56) through training and enablement</li>
                         </ul>
-                    <h3>PowerSchool<br/>
-                        August 2018 to February 2019</h3>
+                    <h3>PowerSchool - August 2018 to February 2019</h3>
                         <h4>Software Quality Assurance Intern</h4>
                         <ul>
                             <li>Automated functional tests of enterprise accounting suite, using Java, Selenium and Selenide.</li>
                         </ul>
-                    <h3>Hewlett-Packard Enterprise<br/>
-                        September 2009 to November 2016</h3>
+                    <h3>Hewlett-Packard Enterprise - September 2009 to November 2016</h3>
                         <h4>Software Quality Assurance Enginer (2 years)</h4>
                             <ul>
                                 <li>Created, ran and automated software tests for ArcSight</li>
@@ -102,7 +108,7 @@
             </article>
             
             <aside id="skills">
-                <h3>Skills</h3>
+                <h2>Skills</h2>
                 <ul>
                     <li>SDLC
                         <ul>
@@ -118,7 +124,7 @@
                             <li>Waterfall</li>
                         </ul>
                     </li>
-                    <li>Automation Frameworks
+                    <li>Test Automation
                         <ul>
                             <li>Appium</li>
                             <li>Playwright</li>
@@ -137,13 +143,14 @@
                             <li>SQL</li>
                         </ul>
                     </li>
-                    <li>User Experiece Design
+                    <li>User Experiece
                         <ul>
                             <li>Adobe XD</li>
                             <li>Figma</li>
                             <li>Persona</li>
                             <li>Pain Points</li>
                             <li>Protytyping</li>
+                            <li>Usability</li>
                             <li>User Journey</li>
                             <li>User Story</li>
                             <li>Wire Framing</li>
@@ -151,38 +158,25 @@
                     </li>
                 </ul>
             </aside>
-            <hr>
             <article id="education">
                 <h2>Education</h2>
-                <h3>Bachelor of Science</h3>
-                <a href="https://www.csuchico.edu"><h4>California State University, Chico</h4></a>
-                
-                <h5>Major</h5>
+                <h3>Bachelor of Science, <a href="https://www.csuchico.edu">California State University, Chico</a>   </h3>
+                             
                 <ul>
-                    <li>Computer Information Systems</li>
+                    <li>Major: Computer Information Systems</li>
                 </ul>
-                <h5>Minor</h5>
                 <ul>
-                    <li>Business</li>
-                    <li>Computer Science</li>
+                    <li>Minors: Computer Science, and Business Administration</li>
                 </ul>
                 
-                <h3>Associate in Arts</h3>
-                <a href="https://www.butte.edu"><h4>Butte College</h4></a>
-                <h5>Major</h5>
+                <h3>Associate in Arts, <a href="https://www.butte.edu">Butte College</a></h3>
+                
                 <ul>
-                    <li>Art History</li>
-                    <li>Art Studio</li>
+                    <li>Majors: Art History, and Art Studio</li>
                 </ul>
             </article>
-            <aside id="honors">
-                <h3>Honors</h3>
-                <ul>
-                    <li>Upsilon Pi Epsilon (UPE)</li>
-                </ul>
-            </aside>
             <aside id="certifications">
-                <h3>Certificatied Knowledge</h3>
+                <h2>Certifications</h2>
                     <ul>
                         <li><a href="https://atsqa.org/certified-testers/profile/44ceb12603164b919e5b475056086a79">Agile Testing</a></li>
                         <li><a href="https://freecodecamp.org/certification/fccae837459-fa85-4d5b-8e4a-e96ec0b79d60/foundational-c-sharp-with-microsoft">C#</a></li>

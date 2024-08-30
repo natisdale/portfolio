@@ -24,34 +24,85 @@
                 grid-template-columns: 700px 220px;
             }
             #summary {
+                margin-top: 1rem;
                 grid-column: span 2;
                 display: flex;
+                background-color: #fefae0;
+                height: 4rem;
+                padding: 0rem 2rem 2rem 1rem;
+                border-width: 1px;
+                border-color: black;
+                border-style: solid;
+                border-radius: 15px;
             }
             #summary h2 {
-                margin-right: 4rem;
             }
             #summary p {
+                padding-left: 3rem;
                 text-align: justify;
             }
             #education {
+                height: 20rem;
+                margin-top: 10rem;
                 grid-row: 2;
                 grid-column: 1;
                 grid-row: span 2;
             }
             #education {
+                height: 21rem;
+                margin-top: 9rem;
+                margin-bottom: 2rem;
+                padding-left: 1rem;
+                background-color: #eae2b7;
                 grid-column: 1;
+                border-width: 1px;
+                border-color: black;
+                border-style: solid;
+                border-radius: 15px;
             }
             #skills {
                 grid-column: 2;
-                grid-row: 2
+                grid-row: 2;
+                height: 53rem;
+                padding-left: 1rem;
+                margin-top: 5rem;
+                margin-left: 1rem;
+                background-color: #e9edc9;
+                border-width: 1px;
+                border-color: black;
+                border-style: solid;
+                border-radius: 15px;
             }
             #certifications {
+                height: 21rem;
+                padding-left: 1rem;
+                background-color: #faedcd;
+                margin-top: 9rem;
+                margin-left: 1rem;
+                margin-bottom: 2rem;
                 grid-column: 2;
-                grid-row: 3
+                grid-row: 3;
+                border-width: 1px;
+                border-color: black;
+                border-style: solid;
+                border-radius: 15px;
             }
             #honors {
                 grid-column: 2;
                 grid-row: 4;
+            }
+            #work-history {
+                height: 53rem;
+                padding-left: 1rem;
+                margin-top: 5rem;
+                background-color: #ccd5ae;
+                border-width: 1px;
+                border-color: black;
+                border-style: solid;
+                border-radius: 15px;
+            }
+            #skills {
+                
             }
             a {
                 color: black;
@@ -68,43 +119,46 @@
         <main>
             <div id="summary">
             <h2>Summary</h2>
-                <p>Passionate about User Experience (UX) with experience on Agile development teams reviewing designs and stories, verifiying acceptance criteria, and automating tests for API, Web, and Mobile apps.</p>
+                <p>User Experience (UX) Designer, and Quality Assurance (QA) Analyst, experienced working with end users, product owners, and developers on Agile teams.  Familiar with considerations for mobile apps, accessibility, and information security.</p>
             </div>
             <article id="work-history">    
                 <h2 >Work History</h2>
                     <h3>ClockShark - August 2021 to May 2024</h3>
                         <h4>Senior Software Quality Assurance Engineer</h4>
                         <ul>
-                            <li>Created and maintained mobile test automation framework</li>
-                            <li>Created formal test plans in Azure Test Plans</li>
-                            <li>Created release for pipelines execution of tests</li>
-                            <li>Evaluated and integrated Device Hosting services for mobile testig</li>
-                            <li>Helped drive defect rate down by 50% (1.24 -> 0.56) through training and enablement</li>
+                            <li>Implemented processes improvements which reduced defect rate by 50% ( 1.24 to 0.56 )</li>
+                            <li>Created formal test plans [Azure Test Plans]</li>
+                            <li>Created and maintained mobile test automation framework [C#, Appium]</li>
+                            <li>Documented API, and created and automated tests [Postman, JavaScript]</li>
+                            <li>Created release pipelines for automated execution of tests [Azure DevOps]</li>
+                            <li>Created dashboards for reporting test status [Azure DevOps]</li>
+                            <li>Reviewed designs for accessibility and functional issues [Figma]</li>
+                            <li>Designed and created app for collection and synthesis of user platform analytics [C#]</li>
                         </ul>
                     <h3>PowerSchool - August 2018 to February 2019</h3>
                         <h4>Software Quality Assurance Intern</h4>
                         <ul>
-                            <li>Automated functional tests of enterprise accounting suite, using Java, Selenium and Selenide.</li>
+                            <li>Automated web user interface (UI) tests [Java, Selenium]</li>
+                            <li>Created documentation and delivered training on automation workflow [Java, Git]</li>
                         </ul>
                     <h3>Hewlett-Packard Enterprise - September 2009 to November 2016</h3>
                         <h4>Software Quality Assurance Enginer (2 years)</h4>
                             <ul>
-                                <li>Created, ran and automated software tests for ArcSight</li>
-                                <li>Created tools, using Java, for data population and system configuration</li>
+                                <li>Automated web UI tests for SIEM products [Java, Selenium]</li>
+                                <li>Designed command line utility for generating IPv6 test data [Java]
+                                </li>
                             </ul>
                         <h4>Support Manager Asia-Pacific (1 year)</h4>
                             <ul>
-                                <li>Mnageed geographically distributed team for Asia-Pacific support/li>
-                                <li>Team maintained highest level of customer satisfaction and employee satisfaction across support teams</li>
+                                <li>Managed geographically distributed team for Asia-Pacific support [Japan, Singapore, U.S.]</li>
                             </ul>
                         <h4>Support Engineer (4 Years)</h4>
                             <ul>
-                                <li>Originally hired by Arcsight, which was later purchased by Hewlett Packard</li>
-                                <li>Authored, reviewed and published knowledge base articles</li>
+                                <li>Supported multi-tier security incident and event monitoring applications</li>
+                                <li>Authored, reviewed and published knowledge base articles and training materials</li>
                                 <li>Trained and mentored Level 1 & 2 engineers</li>
-                                <li>Presented sessions at ArcSight user conferences and webinars</li>
+                                <li>Presented technical user training sessions at user conferences and via webcasts</li>
                             </ul>
-                
             </article>
             
             <aside id="skills">
@@ -162,7 +216,7 @@
             </aside>
             <article id="education">
                 <h2>Education</h2>
-                <h3>Bachelor of Science, <a href="https://www.csuchico.edu">California State University, Chico</a>   </h3>
+                <h3>Bachelor of Science, <a href="https://www.csuchico.edu">California State University, Chico</a> - 2021  </h3>
                              
                 <ul>
                     <li>Major: Computer Information Systems</li>
@@ -171,7 +225,7 @@
                     <li>Minors: Computer Science, and Business Administration</li>
                 </ul>
                 
-                <h3>Associate in Arts, <a href="https://www.butte.edu">Butte College</a></h3>
+                <h3>Associate in Arts, <a href="https://www.butte.edu">Butte College</a> - 2017</h3>
                 
                 <ul>
                     <li>Majors: Art History, and Art Studio</li>
@@ -180,6 +234,7 @@
             <aside id="certifications">
                 <h2>Certifications</h2>
                     <ul>
+                        <li><a href="https://www.credly.com/badges/b6e3cc55-0bfc-48ae-9397-e43bd32415fc">User Experiece Design</a></li>
                         <li><a href="https://atsqa.org/certified-testers/profile/44ceb12603164b919e5b475056086a79">Agile Testing</a></li>
                         <li><a href="https://freecodecamp.org/certification/fccae837459-fa85-4d5b-8e4a-e96ec0b79d60/foundational-c-sharp-with-microsoft">C#</a></li>
                         <li><a href="https://www.youracclaim.com/badges/9bf2817d-23ae-4466-a020-3b00915ca1e3/public_url">Information Security</a></li>

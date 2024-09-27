@@ -1,171 +1,306 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Nathan Tisdale</title>
-        <link rel="stylesheet" href="styles.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Signika:wght@300..700&display=swap" rel="stylesheet">
+            <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico"/>
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     </head>
+    <style>
+        header {
+            text-align: center;
+            margin: 2rem;
+        }
+        h1 {
+            color: darkgreen;
+            font-weight: bolder;
+        }
+        main {
+            display: grid;
+            width: 1080;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+        }
+        .work {
+            background-color: darkgreen;
+        }
+        .education {
+            background-color: lightgreen;
+        }
+        #rolesHeading {
+            grid-column-start: 1;
+            grid-column-end:  3;
+            margin: 1rem;
+            align-content: center;
+        }
+        #hp {
+            grid-column-start: 3;
+            grid-column-end:  6;
+            margin: 1rem;
+        }
+        #powerschool {
+            grid-column-start: 7;
+            grid-column-end:  8;
+            margin: 1em;
+        }
+        #chicostate {
+            grid-column-start: 8;
+            grid-column-end:  10;
+            margin: 1rem;
+        }
+        #clockshark {
+            grid-column-start: 10;
+            grid-column-end:  13;
+            margin: 1rem;
+        }
+        #timelineHading {
+            grid-row-start: 2;
+            grid-row-end: 4;
+            grid-column-start: 1;
+            grid-column-end:  3;
+            align-content: center;
+            height: 8rem;
+            margin: 1rem;
+        }
+        .year {
+            margin: 1rem;
+        }
+        .workTimeline {
+            background-color: darkgreen;
+        }
 
+        #timelineHPE {
+            grid-row-start: 2;
+            grid-row-end: 4;
+            grid-column-start: 3;
+            grid-column-end: 6;
+            height: 8rem;
+            align-content: end;
+        }
+        #timelineSabbatical {
+            background-color: green;
+            grid-row-start: 2;
+            grid-row-end: 4;
+            grid-column-start: 6;
+            grid-column-end: 10;
+            height: 8rem;
+            align-content: end;
+        }
+        #timelinePS {
+            grid-row-start: 2;
+            grid-row-end: 4;
+            grid-column-start: 7;
+            grid-column-end: 8;
+            height: 4rem;
+            align-content: end;
+            margin: 0rem 1rem;
+        }
+        #timelineChicoState {
+            grid-row-start: 2;
+            grid-row-end: 4;
+            grid-column-start: 8;
+            grid-column-end: 10;
+            height: 4rem;
+            align-content: end;
+            margin: 0rem 1rem;
+        }
+        #timelineClockShark {
+            grid-row-start: 2;
+            grid-row-end: 4;
+            grid-column-start: 10;
+            grid-column-end: 13;
+            height: 8rem;
+            align-content: end;
+        }
+        #educationHeading {
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-start: 1;
+            grid-column-end:  2;
+            align-content: center;
+            margin: 1rem;
+        }
+        #education {
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-start: 6;
+            grid-column-end: 10;
+        }
+        #certificationHeading {
+            grid-row-start: 4;
+            grid-row-end: 5;
+            grid-column-start: 1;
+            grid-column-end:  3;
+            margin: 1rem;
+            align-content: center;
+        }
+        .certification {
+            grid-row-start: 4;
+            grid-row-end: 5;
+            padding: 1rem;
+        }
+
+        figure {
+            text-align: center;
+        }
+    </style>
     <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black" aria-label="navbar">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <div class="collapse navbar-collapse justify-content-md-center" id="navbarMenu">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/"><img src="assets/images/NathanTisdaleLogoDark.png" alt="home" height="24"/></a>
+                        </li>
+                    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">UX Projects</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="timekeeping.html">Time Fairy</a></li>
+                                <li><a class="dropdown-item" href="museobello.html">Museo Bello</a></li>
+                                <li><a class="dropdown-item" href="exhibitions.html">Exhibitions</a></li>
+                                <li><a class="dropdown-item" href="thatwineismine.html">That Wine is Mine</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="resume.html">Resume</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
         <header>
             <h1>Nathan Tisdale</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="apps.html">Apps</a></li>
-                    <li><a href="design.html">Designs</a></li>
-                    <li><a href="art.html">Artworks</a></li>
-                    <li class="current-page"><a href="about.html">About</a></li>
-                </ul>
-            </nav>
-
+            <p>Designer | Developer | Tester</p>
         </header>
         <main>
-            <h2>Summary</h2>
-                <p>Driven by a passion for user experience to contribute toward development of well designed, high quality products.</p>
-            <article id="work-history">    
-                <h2 >Work History</h2>
-                    <h3>ClockShark<br/>
-                        August 2021 to May 2024</h3>
-                        <h4>Senior Software Quality Assurance Engineer</h4>
-                        <ul>
-                            <li>Created and maintained mobile test automation framework</li>
-                            <li>Created formal test plans in Azure Test Plans</li>
-                            <li>Created release for pipelines execution of tests</li>
-                            <li>Evaluated and integrated Device Hosting services for mobile testig</li>
-                            <li>Helped drive defect rate down by 50% (1.24 -> 0.56) through training and enablement</li>
-                        </ul>
-                    <h3>PowerSchool<br/>
-                        August 2018 to February 2019</h3>
-                        <h4>Software Quality Assurance Intern</h4>
-                        <ul>
-                            <li>Automated functional tests of enterprise accounting suite, using Java, Selenium and Selenide.</li>
-                        </ul>
-                    <h3>Hewlett-Packard Enterprise<br/>
-                        September 2009 to November 2016</h3>
-                        <h4>Software Quality Assurance Enginer (2 years)</h4>
-                            <ul>
-                                <li>Created, ran and automated software tests for ArcSight</li>
-                                <li>Created tools, using Java, for data population and system configuration</li>
-                            </ul>
-                        <h4>Support Manager Asia-Pacific (1 year)</h4>
-                            <ul>
-                                <li>Mnageed geographically distributed team for Asia-Pacific support/li>
-                                <li>Team maintained highest level of customer satisfaction and employee satisfaction across support teams</li>
-                            </ul>
-                        <h4>Support Engineer (4 Years)</h4>
-                            <ul>
-                                <li>Originally hired by Arcsight, which was later purchased by Hewlett Packard</li>
-                                <li>Authored, reviewed and published knowledge base articles</li>
-                                <li>Trained and mentored Level 1 & 2 engineers</li>
-                                <li>Presented sessions at ArcSight user conferences and webinars</li>
-                            </ul>
-            </article>
-            <aside id="skills">
-                <h3 >Skills</h3>
-                <ul>
-                    <li>SDLC
-                        <ul>
-                            <li>Agile</li>
-                            <li>Kanban</li>
-                            <li>Waterfall</li>
-                            <li>CI/CD</li>
-                            <li>Acceptance Testing</li>
-                            <li>Scrum</li>
-                            <li>Retrospective</li>
-                            <li>Peer Review</li>
-                            <li>Pipelines</li>
-                            <li>Story Pointing</li> 
-                        </ul>
-                    </li>
-                    <li>Automation Frameworks
-                        <ul>
-                            <li>Appium</li>
-                            <li>Playwright</li>
-                            <li>Selenium</li>
-                        </ul>
-                    </li>
-                    <li>Languages
-                        <ul>
-                            <li>C++</li>
-                            <li>C#</li>
-                            <li>CSS</li>
-                            <li>HTML</li>
-                            <li>Java</li>
-                            <li>JavaScript</li>
-                            <li>Python</li>
-                            <li>SQL</li>
-                        </ul>
-                    </li>
-                    <li>User Experiece Design
-                        <ul>
-                            <li>Adobe XD</li>
-                            <li>Figma</li>
-                            <li>Persona</li>
-                            <li>Pain Points</li>
-                            <li>Protytyping</li>
-                            <li>User Journey</li>
-                            <li>User Story</li>
-                            <li>User Flow Diagrams</li>
-                            <li>Wire Frames</li>
-                        </ul>
-                    </li>
-                </ul>
-            </aside>
-            <hr>
-            <article id="education">
-                <h2>Education</h2>
-                <h3>Bachelor of Science</h3>
-                <a href="https://www.csuchico.edu"><h4>California State University, Chico</h4></a>
-                
-                <h5>Major</h5>
-                <ul>
-                    <li>Computer Information Systems</li>
-                </ul>
-                <h5>Minor</h5>
-                <ul>
-                    <li>Business</li>
-                    <li>Computer Science</li>
-                </ul>
-                <h3>Associate in Arts</h3>
-                <a href="https://www.butte.edu"><h4>Butte College</h4></a>
-                <h5>Major</h5>
-                <ul>
-                    <li>Art History</li>
-                    <li>Art Studio</li>
-                </ul>
-            </article>
-            <aside id="honors">
-                <h3>Honors</h3>
-                <ul>
-                    <li>Upsilon Pi Epsilon (UPE)</li>
-                </ul>
-            </aside>
-            <aside id="certifications">
-                <h3>Certificatied Knowledge</h3>
-                    <ul>
-                        <li><a href="https://atsqa.org/certified-testers/profile/44ceb12603164b919e5b475056086a79">Agile Testing</a></li>
-                        <li><a href="https://freecodecamp.org/certification/fccae837459-fa85-4d5b-8e4a-e96ec0b79d60/foundational-c-sharp-with-microsoft">C#</a></li>
-                        <li><a href="https://www.youracclaim.com/badges/9bf2817d-23ae-4466-a020-3b00915ca1e3/public_url">Information Security</a></li>
-                        <li><a href="https://www.youracclaim.com/badges/643192dc-ebdc-41e6-b76a-2f307f8986ff/public_url">Linux</a></li>
-                        <li><a href="https://www.youracclaim.com/badges/b23c0a9f-3614-4178-9c65-a92bd0cf8eb8?source=linked_in_profile">Microsoft Azure</a></li>
-                        <li><a href="https://atsqa.org/certified-testers/profile/44ceb12603164b919e5b475056086a79">Mobile Application Testing</a></li>
-                        <li><a href="https://www.youracclaim.com/badges/69a84350-f18f-4551-99b7-8d18c9a64b76?source=linked_in_profile">Python</a></li>
-                        <li><a href="https://www.youracclaim.com/badges/0f1290e2-340f-4b81-bc90-d8e09fbdc363/public_url">Secure Software Lifecycle</a></li>
-                        <li><a href="https://www.youracclaim.com/badges/1ceb003e-4dd5-47db-bf43-ea9c7dae3821/public_url">Techincal Training</a></li>
+            <div id="rolesHeading">
+                <h2>Experience</h2>
+            </div>
+            <div id="hp">
+                <img src="" alt="Hewlett Packard Enterprise"/>
+                <p>Quality Assurance (QA) Engineer<p>
+                <p>Java, Bash, TCL, SQL, NoSQL, Selenium, Linux, Windows, Jira, Quality Center, SIEM</p>
+            </div>
 
-                    </ul>
-            </aside>
+            <div id="powerschool">
+                <img src="" alt="PowerSchool"/>
+                <p>QA Intern</p>
+                <p>Java, Git, Selenium, SharePoint</p>
+            </div>
+
+            <div id="chicostate">
+                <img src="" alt="Chico State"/>
+                <p>Student IT Assistant</p>
+                <p>Personas, User Journeys, Workflow Diagrams, UML Diagrams, SQL</p>
+            </div>
+
+            <div id="clockshark">
+                <img src="" alt="ClockShark"/>
+                <p>Senior QA Engineer</p>
+                <p>Figma, C#, Python, HTML, CSS, JavaScript, SQL, Selenium, Appium, Azure DevOps, Azure Test Plans</p>
+            </div>
+
+            <div id="timelineHading">
+                <h2>Timeline</h2>
+            </div>
+            <div id="timelineHPE" class="workTimeline">
+                <p class="year">2014</p>
+            </div>
+            <div id="timelineSabbatical">
+                <p class="year">2017</p>
+            </div>
+            <div id="timelinePS" class="workTimeline">
+                <!--color block-->
+            </div>
+            <div id="timelineChicoState" class="workTimeline">
+                <!--color block-->
+            </div>
+            <div id="timelineClockShark" class="workTimeline">
+                <p class="year">2021</p>
+            </div>
+            <div id="educationHeading">
+                <h2>Education</h2>
+            </div>
+            <div id="education">
+                <img src="" alt="California State University, Chico"/>
+                <h3>B.S. Computer Information Systems</h3>
+                <p>GPA: 3.5</p>
+                <p>
+                    Minors:
+                </p>
+                <ul>
+                    <li>Computer Science</li>
+                    <li>Business Administration</li>
+                </ul>
+                
+                <img src="" alt="Upsilon Pi Epsion Society for the Computing and Information Systems"/>
+            </div>
+
+            <div id="certificationHeading">
+                <h2>Certifications<h2>
+            </div>
+            <figure class="certification">
+                <img src="" alt="CompTIA CTT+"/>
+                <caption>Classroom Trainer</caption>
+            </figure>
+            <figure class="certification">
+                <img src="" alt="CompTIA Linux+"/>
+                <caption>Linux</caption>
+            </figure>
+            <figure class="certification">
+                <img src="" alt="Certified Information Systems Security Professioal (CISSP)"/>
+                <caption>InfoSec</caption>
+            </figure>
+            <figure class="certification">
+                <img src="" alt="Certified Secure Software Lifecycle Professioal (CSSLP)"/>
+                <caption>DevSec</caption>
+            </figure>
+            <figure class="certification">
+                <img src="" alt="Python"/>
+                <caption>Python</caption>
+            </figure>
+            <figure class="certification">
+                <img src="" alt="C#"/>
+                <caption>C#</caption>
+            </figure>
+            <figure class="certification">
+                <img src="" alt="ISTQB Agile Tester"/>
+                <caption>Agile Tester</caption>
+            </figure>
+            <figure class="certification">
+                <img src="" alt="ISTQB Mobile Application Tester"/>
+                <caption>Mobile App Tester</caption>
+            </figure>
+            <figure class="certification">
+                <img src="" alt="Azure Artificial Intelligence Fundamentals"/>
+                <caption>Azure AI</caption>
+            </figure>
+            <figure id="certification">
+                <img src="" alt="Google UX Design Professional"/>
+                <caption>User Experience</caption>
+            </figure>
         </main>
-        <footer>
-            <hr />
-            <a name="linkedin" href="https://www.linkedin.com/in/nathantisdale/"><img height="25" src="https://content.linkedin.com/content/dam/me/brand/en-us/brand-home/illustrations/dsk-e6.svg.original.svg" alt="Follow on LinkedIn"/></a>
-            <p>© Nathan Tisdale. All rights reserved</p>
+
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+            <span class="mb-3 mb-md-0 text-body-secondary">© 2024 Nathan Tisdale</span>
+            </div>
+        
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><a class="text-body-secondary" href="https://github.com/natisdale"><i class="bi-github"></i></a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="https://www.linkedin.com/in/nathantisdale/"><i class="bi-linkedin"></i></a></li>
+            </ul>
         </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     </body>
 </html>
-

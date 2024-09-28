@@ -17,6 +17,9 @@
                 text-align: center;
                 margin: 2rem;
             }
+            #phone {
+                display: none;
+            }
             h1 {
                 color: darkgreen;
                 font-weight: bolder;
@@ -26,7 +29,7 @@
                 display: grid;
                 width: 1080;
                 grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-                grid-template-rows: 1fr .5fr .5fr .75fr .75fr .25fr;
+                grid-template-rows: 1fr .5fr .5fr .5fr .5fr;
                 margin: 0 2rem; 
             }
             .work {
@@ -35,15 +38,8 @@
             .education {
                 background-color: lightgreen;
             }
-            #rolesHeading {
-                grid-column-start: 1;
-                grid-column-end:  3;
-                margin: 1rem;
-                align-content: center;
-
-            }
             #hp {
-                grid-column-start: 3;
+                grid-column-start: 1;
                 grid-column-end:  6;
                 margin: 1rem;
             }
@@ -83,7 +79,7 @@
             #timelineHPE {
                 grid-row-start: 2;
                 grid-row-end: 4;
-                grid-column-start: 3;
+                grid-column-start: 1;
                 grid-column-end: 6;
                 height: 6rem;
                 align-content: end;
@@ -123,14 +119,6 @@
                 height: 6rem;
                 align-content: end;
             }
-            #educationHeading {
-                grid-row-start: 3;
-                grid-row-end: 4;
-                grid-column-start: 1;
-                grid-column-end:  2;
-                align-content: center;
-                margin: 1rem;
-            }
             #educationButteCollege {
                 grid-row-start: 3;
                 grid-row-end: 4;
@@ -167,18 +155,16 @@
                 grid-column-end: 13;
                 text-align: center;
             }
-            #certificationHeading {
+            #certifications {
+                display:flex;
                 grid-row-start: 5;
                 grid-row-end: 6;
                 grid-column-start: 1;
-                grid-column-end:  3;
+                grid-column-end:  13;
                 margin: 0 1rem;
-                align-content: center;
             }
             .certification {
-                grid-row-start: 5;
-                grid-row-end: 6;
-                margin: 0 1rem;
+                flex-grow: 1;
             }
 
             figure {
@@ -189,6 +175,9 @@
             }
             hr {
                 display: none;
+            }
+            #social {
+                margin-right: 3rem;
             }
         }
 
@@ -205,13 +194,12 @@
             header {
                 display: flex;
             }
-            header p {
-                margin-left: 20%;
+            #phone {
+                display: inline;
             }
-            caption {
-                display: none;
-                visibility: hidden;
-                font-size: 10px;
+            header p {
+                flex-grow: 1;
+                text-align: right;
             }
             .work {
                 height: 1rem;
@@ -253,7 +241,7 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="resume.html">Resume</a>
+                            <a class="nav-link" href="about.html">About</a>
                         </li>
                     </ul>
                 </div>
@@ -262,14 +250,12 @@
         <header>
             <h1>Nathan Tisdale</h1>
             <p>Designer | Developer | Tester</p>
+            <p id="phone">+1 408 242 4313</p>
         </header>
         <main>
-            <div id="rolesHeading">
-                <h2>Experience</h2>
-            </div>
             <div id="hp">
                 <img src="assets/images/logos/hpe.png" height="100" alt="Hewlett Packard Enterprise"/>
-                <h3>Quality Assurance (QA) Engineer</h3>
+                <h3>Support Engineer > Manager > QA Engineer</h3>
                 <p>Java, Bash, TCL, SQL, NoSQL, Selenium, Linux, Windows, Jira, Quality Center, SIEM</p>
             </div>
 
@@ -313,9 +299,6 @@
                 <p class="year">2021</p>
             </div>
             
-            <div id="educationHeading">
-                <h2>Education</h2>
-            </div>
             <div id="educationButteCollege">
                 <img src="assets/images/logos/ButteCollege.png" width="100" alt="Butte College"/>
                 <h3>A.A. Studio Arts</h3>
@@ -331,69 +314,68 @@
                 <img src="assets/images/logos/upe.jpg" width="500" alt="Upsilon Pi Epsion Society for the Computing and Information Systems"/>
             </div>
             <div id="educationPostHonors"></div>
-            <div id="certificationHeading">
-                <h2>Certifications<h2>
+            <div id="certifications">    
+                <figure class="certification">
+                    <a href="https://www.credly.com/badges/1ceb003e-4dd5-47db-bf43-ea9c7dae3821/public_url">
+                        <img src="assets/images/certifications/CompTIA_CTT_110px.png" width="100"alt="CompTIA CTT+"/>
+                    </a>
+                    <caption>Training</caption>
+                </figure>
+                <figure class="certification">
+                    <a href="https://www.credly.com/badges/643192dc-ebdc-41e6-b76a-2f307f8986ff/public_url">
+                        <img src="assets/images/certifications/CompTIA_Linux_110px.png" width="100"alt="CompTIA Linux+"/>
+                    </a>
+                    <caption>Linux</caption>
+                </figure>
+                <figure class="certification">
+                    <a href="https://www.credly.com/badges/3d5c65bd-64fc-4798-9752-d1b5778f3744/public_url">
+                        <img src="assets/images/certifications/cissp125px.png" width="100"alt="Certified Information Systems Security Professioal (CISSP)"/>
+                    </a>
+                    <caption>InfoSec</caption>
+                </figure>
+                <figure class="certification">
+                    <a href="https://www.credly.com/badges/7f4d1154-824d-43f2-96b6-8b0d739b8e03/public_url">
+                        <img src="assets/images/certifications/csslp125px.png" width="100"alt="Certified Secure Software Lifecycle Professioal (CSSLP)"/>
+                    </a>
+                    <caption>DevSec</caption>
+                </figure>
+                <figure class="certification">
+                    <a href="https://www.credly.com/badges/69a84350-f18f-4551-99b7-8d18c9a64b76/public_url">
+                        <img src="assets/images/certifications/python102px.png" width="100"alt="Python"/>
+                    </a>
+                    <caption>Python</caption>
+                </figure>
+                <figure class="certification">
+                    <a href="https://freecodecamp.org/certification/fccae837459-fa85-4d5b-8e4a-e96ec0b79d60/foundational-c-sharp-with-microsoft">
+                        <img src="assets/images/certifications/microsoft-certified-fundamentals-badge.svg" width="100" width="100" alt="C#"/>
+                    </a>
+                    <caption>C#</caption>
+                </figure>
+                <figure class="certification">
+                    <a href="https://atsqa.org/certified-testers/profile/44ceb12603164b919e5b475056086a79">
+                        <img src="assets/images/certifications/CTFL-AT-badge.png" width="100"alt="ISTQB Agile Tester"/>
+                    </a>
+                    <caption>Agile</caption>
+                </figure>
+                <figure class="certification">
+                    <a href="https://atsqa.org/certified-testers/profile/44ceb12603164b919e5b475056086a79">
+                        <img src="assets/images/certifications/CT-MAT-badge.png" width="100"alt="ISTQB Mobile Application Tester"/>
+                    </a>
+                    <caption>Mobile Apps</caption>
+                </figure>
+                <figure class="certification">
+                    <a href="https://www.credly.com/badges/b23c0a9f-3614-4178-9c65-a92bd0cf8eb8/public_url">
+                        <img src="assets/images/certifications/microsoft-certified-azure-fundamentals.png" width="100"alt="Azure Artificial Intelligence Fundamentals"/>
+                    </a>
+                    <caption>Azure</caption>
+                </figure>
+                <figure id="certification">
+                    <a href="https://www.credly.com/badges/b6e3cc55-0bfc-48ae-9397-e43bd32415fc/public_url">
+                        <img src="assets/images/certifications/GoogleUserUXDesign.png" width="100" alt="Google UX Design Professional"/>
+                    </a>
+                    <caption>UX Design</caption>
+                </figure>
             </div>
-            <figure class="certification">
-                <a href="https://www.credly.com/badges/1ceb003e-4dd5-47db-bf43-ea9c7dae3821/public_url">
-                    <img src="assets/images/certifications/CompTIA_CTT_110px.png" width="100"alt="CompTIA CTT+"/>
-                </a>
-                <caption>Training</caption>
-            </figure>
-            <figure class="certification">
-                <a href="https://www.credly.com/badges/643192dc-ebdc-41e6-b76a-2f307f8986ff/public_url">
-                    <img src="assets/images/certifications/CompTIA_Linux_110px.png" width="100"alt="CompTIA Linux+"/>
-                </a>
-                <caption>Linux</caption>
-            </figure>
-            <figure class="certification">
-                <a href="https://www.credly.com/badges/3d5c65bd-64fc-4798-9752-d1b5778f3744/public_url">
-                    <img src="assets/images/certifications/cissp125px.png" width="100"alt="Certified Information Systems Security Professioal (CISSP)"/>
-                </a>
-                <caption>InfoSec</caption>
-            </figure>
-            <figure class="certification">
-                <a href="https://www.credly.com/badges/7f4d1154-824d-43f2-96b6-8b0d739b8e03/public_url">
-                    <img src="assets/images/certifications/csslp125px.png" width="100"alt="Certified Secure Software Lifecycle Professioal (CSSLP)"/>
-                </a>
-                <caption>DevSec</caption>
-            </figure>
-            <figure class="certification">
-                <a href="https://www.credly.com/badges/69a84350-f18f-4551-99b7-8d18c9a64b76/public_url">
-                    <img src="assets/images/certifications/python102px.png" width="100"alt="Python"/>
-                </a>
-                <caption>Python</caption>
-            </figure>
-            <figure class="certification">
-                <a href="https://freecodecamp.org/certification/fccae837459-fa85-4d5b-8e4a-e96ec0b79d60/foundational-c-sharp-with-microsoft">
-                    <img src="assets/images/certifications/microsoft-certified-fundamentals-badge.svg" width="100" width="100" alt="C#"/>
-                </a>
-                <caption>C#</caption>
-            </figure>
-            <figure class="certification">
-                <a href="https://atsqa.org/certified-testers/profile/44ceb12603164b919e5b475056086a79">
-                    <img src="assets/images/certifications/CTFL-AT-badge.png" width="100"alt="ISTQB Agile Tester"/>
-                </a>
-                <caption>Agile</caption>
-            </figure>
-            <figure class="certification">
-                <a href="https://atsqa.org/certified-testers/profile/44ceb12603164b919e5b475056086a79">
-                    <img src="assets/images/certifications/CT-MAT-badge.png" width="100"alt="ISTQB Mobile Application Tester"/>
-                </a>
-                <caption>Mobile Apps</caption>
-            </figure>
-            <figure class="certification">
-                <a href="https://www.credly.com/badges/b23c0a9f-3614-4178-9c65-a92bd0cf8eb8/public_url">
-                    <img src="assets/images/certifications/microsoft-certified-azure-fundamentals.png" width="100"alt="Azure Artificial Intelligence Fundamentals"/>
-                </a>
-                <caption>Azure</caption>
-            </figure>
-            <figure id="certification">
-                <a href="https://www.credly.com/badges/b6e3cc55-0bfc-48ae-9397-e43bd32415fc/public_url">
-                    <img src="assets/images/certifications/GoogleUserUXDesign.png" width="100" alt="Google UX Design Professional"/>
-                </a>
-                <caption>UX Design</caption>
-            </figure>
         </main>
 
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
@@ -404,7 +386,7 @@
             <span class="mb-3 mb-md-0 text-body-secondary">© 2024 Nathan Tisdale</span>
             </div>
         
-            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <ul id="social" class="nav col-md-4 justify-content-end list-unstyled d-flex">
                 <li class="ms-3"><a class="text-body-secondary" href="https://github.com/natisdale"><i class="bi-github"></i></a></li>
                 <li class="ms-3"><a class="text-body-secondary" href="https://www.linkedin.com/in/nathantisdale/"><i class="bi-linkedin"></i></a></li>
             </ul>

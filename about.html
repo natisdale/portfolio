@@ -21,7 +21,9 @@
             display: grid;
             width: 1080;
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr .5fr .5fr .75fr .75fr .25fr;
+            margin: 0 2rem;
+            min-width: 1024px;
         }
         .work {
             background-color: darkgreen;
@@ -61,7 +63,7 @@
             grid-column-start: 1;
             grid-column-end:  3;
             align-content: center;
-            height: 8rem;
+            height: 6rem;
             margin: 1rem;
         }
         .year {
@@ -76,7 +78,7 @@
             grid-row-end: 4;
             grid-column-start: 3;
             grid-column-end: 6;
-            height: 8rem;
+            height: 6rem;
             align-content: end;
         }
         #timelineSabbatical {
@@ -85,7 +87,7 @@
             grid-row-end: 4;
             grid-column-start: 6;
             grid-column-end: 10;
-            height: 8rem;
+            height: 6rem;
             align-content: end;
         }
         #timelinePS {
@@ -93,7 +95,7 @@
             grid-row-end: 4;
             grid-column-start: 7;
             grid-column-end: 8;
-            height: 4rem;
+            height: 3rem;
             align-content: end;
             margin: 0rem 1rem;
         }
@@ -102,7 +104,7 @@
             grid-row-end: 4;
             grid-column-start: 8;
             grid-column-end: 10;
-            height: 4rem;
+            height: 3rem;
             align-content: end;
             margin: 0rem 1rem;
         }
@@ -111,7 +113,7 @@
             grid-row-end: 4;
             grid-column-start: 10;
             grid-column-end: 13;
-            height: 8rem;
+            height: 6rem;
             align-content: end;
         }
         #educationHeading {
@@ -122,23 +124,53 @@
             align-content: center;
             margin: 1rem;
         }
-        #education {
+        #educationButteCollege {
             grid-row-start: 3;
             grid-row-end: 4;
-            grid-column-start: 6;
-            grid-column-end: 10;
+            grid-column-start: 4;
+            grid-column-end: 8;
+            text-align: center;
         }
-        #certificationHeading {
+        #educationChicoState {
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-start: 8;
+            grid-column-end: 12;
+            text-align: center;
+            padding-left: 1rem;
+        }
+        #educationPreHonors {
             grid-row-start: 4;
             grid-row-end: 5;
+            grid-column-start: 1;
+            grid-column-end: 6;
+            text-align: center;
+        }
+        #educationHonors {
+            grid-row-start: 4;
+            grid-row-end: 5;
+            grid-column-start: 6;
+            grid-column-end: 10;
+            text-align: center;
+        }
+        #educationPostHonors {
+            grid-row-start: 4;
+            grid-row-end: 5;
+            grid-column-start: 10;
+            grid-column-end: 13;
+            text-align: center;
+        }
+        #certificationHeading {
+            grid-row-start: 5;
+            grid-row-end: 6;
             grid-column-start: 1;
             grid-column-end:  3;
             margin: 1rem;
             align-content: center;
         }
         .certification {
-            grid-row-start: 4;
-            grid-row-end: 5;
+            grid-row-start: 5;
+            grid-row-end: 6;
             padding: 1rem;
         }
 
@@ -184,25 +216,25 @@
                 <h2>Experience</h2>
             </div>
             <div id="hp">
-                <img src="" alt="Hewlett Packard Enterprise"/>
+                <img src="assets/images/logos/hpe.png" height="100" alt="Hewlett Packard Enterprise"/>
                 <p>Quality Assurance (QA) Engineer<p>
                 <p>Java, Bash, TCL, SQL, NoSQL, Selenium, Linux, Windows, Jira, Quality Center, SIEM</p>
             </div>
 
             <div id="powerschool">
-                <img src="" alt="PowerSchool"/>
+                <img src="assets/images/logos/powerschool.png" height="100" alt="PowerSchool"/>
                 <p>QA Intern</p>
                 <p>Java, Git, Selenium, SharePoint</p>
             </div>
 
             <div id="chicostate">
-                <img src="" alt="Chico State"/>
+                <img src="assets/images/logos/ChicoStateWildcat.png" height="100" alt="Chico State"/>
                 <p>Student IT Assistant</p>
                 <p>Personas, User Journeys, Workflow Diagrams, UML Diagrams, SQL</p>
             </div>
 
             <div id="clockshark">
-                <img src="" alt="ClockShark"/>
+                <img src="assets/images/logos/clockshark.png" height="100" alt="ClockShark"/>
                 <p>Senior QA Engineer</p>
                 <p>Figma, C#, Python, HTML, CSS, JavaScript, SQL, Selenium, Appium, Azure DevOps, Azure Test Plans</p>
             </div>
@@ -225,65 +257,66 @@
             <div id="timelineClockShark" class="workTimeline">
                 <p class="year">2021</p>
             </div>
+            
             <div id="educationHeading">
                 <h2>Education</h2>
             </div>
-            <div id="education">
-                <img src="" alt="California State University, Chico"/>
-                <h3>B.S. Computer Information Systems</h3>
-                <p>GPA: 3.5</p>
-                <p>
-                    Minors:
-                </p>
-                <ul>
-                    <li>Computer Science</li>
-                    <li>Business Administration</li>
-                </ul>
-                
-                <img src="" alt="Upsilon Pi Epsion Society for the Computing and Information Systems"/>
+            <div id="educationButteCollege">
+                <img src="assets/images/logos/ButteCollege.png" width="100" alt="Butte College"/>
+                <h3>A.A. Studio Arts</h3>
+                <h3>A.A. Art History</h3>
             </div>
-
+            <div id="educationChicoState">
+                <img src="assets/images/logos/ChicoStateWildcat.png" width="100" alt="California State University, Chico"/>
+                <h3>B.S. Computer Information Systems</h3>
+                <p>Minors: Computer Science, Business Administration</p>
+            </div>
+            <div id="educationPreHonors"></div>
+            <div id="educationHonors">
+                <img src="assets/images/logos/upe.jpg" width="500" alt="Upsilon Pi Epsion Society for the Computing and Information Systems"/>
+            </div>
+            <div id="educationPostHonors"></div>
             <div id="certificationHeading">
                 <h2>Certifications<h2>
             </div>
             <figure class="certification">
-                <img src="" alt="CompTIA CTT+"/>
+                <img src="assets/images/certifications/CompTIA_CTT_110px.png" width="100"alt="CompTIA CTT+"/>
                 <caption>Classroom Trainer</caption>
             </figure>
             <figure class="certification">
-                <img src="" alt="CompTIA Linux+"/>
+                <img src="assets/images/certifications/CompTIA_Linux_110px.png" width="100"alt="CompTIA Linux+"/>
                 <caption>Linux</caption>
             </figure>
             <figure class="certification">
-                <img src="" alt="Certified Information Systems Security Professioal (CISSP)"/>
+                <img src="assets/images/certifications/cissp125px.png" width="100"alt="Certified Information Systems Security Professioal (CISSP)"/>
                 <caption>InfoSec</caption>
             </figure>
             <figure class="certification">
-                <img src="" alt="Certified Secure Software Lifecycle Professioal (CSSLP)"/>
+                <img src="assets/images/certifications/csslp125px.png" width="100"alt="Certified Secure Software Lifecycle Professioal (CSSLP)"/>
                 <caption>DevSec</caption>
             </figure>
             <figure class="certification">
-                <img src="" alt="Python"/>
+                <img src="assets/images/certifications/python102px.png" width="100"alt="Python"/>
                 <caption>Python</caption>
             </figure>
             <figure class="certification">
-                <img src="" alt="C#"/>
+                <img src="assets/images/certifications/microsoft-certified-fundamentals-badge.svg" width="100" width="100" alt="C#"/>
                 <caption>C#</caption>
             </figure>
             <figure class="certification">
-                <img src="" alt="ISTQB Agile Tester"/>
+                <img src="assets/images/certifications/CTFL-AT-badge.png" width="100"alt="ISTQB Agile Tester"/>
                 <caption>Agile Tester</caption>
             </figure>
             <figure class="certification">
-                <img src="" alt="ISTQB Mobile Application Tester"/>
+                <img src="assets/images/certifications/CT-MAT-badge.png" width="100"alt="ISTQB Mobile Application Tester"/>
                 <caption>Mobile App Tester</caption>
             </figure>
             <figure class="certification">
-                <img src="" alt="Azure Artificial Intelligence Fundamentals"/>
-                <caption>Azure AI</caption>
+                <img src="assets/images/certifications/microsoft-certified-azure-fundamentals.png" width="100"alt="Azure Artificial Intelligence Fundamentals"/>
+                <caption>Azure</caption>
             </figure>
             <figure id="certification">
-                <img src="" alt="Google UX Design Professional"/>
+                <img src="assets/images/certifications/GoogleUserUXDesign.png" alt="Google UX Design Professional"/>
                 <caption>User Experience</caption>
             </figure>
         </main>

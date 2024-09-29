@@ -25,6 +25,11 @@
                 font-weight: bolder;
                 font-size: 3em;
             }
+            h2 {
+                font-size: larger;
+                font-weight: bold;
+                padding-top: 1rem;
+            }
             main {
                 display: grid;
                 width: 1080;
@@ -179,6 +184,14 @@
             #social {
                 margin-right: 3rem;
             }
+            .skills {
+                list-style-type:circle;
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .skills > li {
+                margin: 0 1rem;
+            }
         }
 
         @media print {
@@ -211,7 +224,7 @@
                 display: block;
                 border-width: 5px;
                 border-style: solid;
-                border-color: black;
+                border-color: darkgreen;
             }
             .year {
                 color: black;;
@@ -255,26 +268,72 @@
         <main>
             <div id="hp">
                 <img src="assets/images/logos/hpe.png" height="100" alt="Hewlett Packard Enterprise"/>
-                <h3>Support Engineer > Manager > QA Engineer</h3>
-                <p>Java, Bash, TCL, SQL, NoSQL, Selenium, Linux, Windows, Jira, Quality Center, SIEM</p>
+                <h2>Support Engineer > Manager > QA Engineer</h2>
+                <ul class="skills">
+                    <li>Java</li>
+                    <li>Bash</li>
+                    <li>TCL</li>
+                    <li>SQL</li>
+                    <li>NoSQL</li>
+                    <li>Selenium</li>
+                    <li>Linux</li>
+                    <li>Windows</li>
+                    <li>Jira</li>
+                    <li>Quality Center</li>
+                    <li>SIEM</li>
+                    <li>ArcSight</li>
+                    <li>Public Speaking</li>
+                    <li>Exploratory Testing</li>
+                    <li>Troubleshooting</li>
+                    <li>Root Cause Analysis</li>
+                    <li>Training</li>
+                    <li>Technical Writing</li>
+                    <li>Leadership</li>
+                </ul>
             </div>
 
             <div id="powerschool">
                 <img src="assets/images/logos/powerschool.png" height="100" alt="PowerSchool"/>
-                <h3>QA Intern</h3>
-                <p>Java, Git, Selenium, SharePoint</p>
+                <h2>QA Intern</h2>
+                <ul class="skills">
+                    <li>Java</li>
+                    <li>Git</li>
+                    <li>Selenium</li>
+                    <li>SharePoint</li>
+                </ul>
             </div>
 
             <div id="chicostate">
                 <img src="assets/images/logos/ChicoStateWildcat.png" height="100" alt="Chico State"/>
-                <h3>Student IT Assistant</h3>
-                <p>Personas, User Journeys, Workflow Diagrams, UML Diagrams, SQL</p>
+                <h2>Student IT Assistant</h2>
+                <ul class="skills">
+                    <li>Personas</li>
+                    <li>User Journey</li>
+                    <li>Diagrams</li>
+                    <li>SQL</li>
+                    <li>Access</li>
+                </ul>
             </div>
 
             <div id="clockshark">
                 <img src="assets/images/logos/clockshark.png" height="100" alt="ClockShark"/>
-                <h3>Senior QA Engineer</h3>
-                <p>Figma, C#, Python, HTML, CSS, JavaScript, SQL, Selenium, Appium, Azure DevOps, Azure Test Plans</p>
+                <h2>Senior QA Engineer</h2>
+                <ul class="skills">
+                    <li>Figma</li>
+                    <li>C#</li>
+                    <li>Python</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>SQL</li>
+                    <li>Selenium</li>
+                    <li>Appium</li>
+                    <li>Azure DevOps</li>
+                    <li>Azure Test Plans</li>
+                    <li>Kobiton</li>
+                    <li>BitBar</li>
+                    <li>HeadSpin</li>
+                </ul>
             </div>
 
             <div id="timelineHading">
@@ -301,12 +360,12 @@
             
             <div id="educationButteCollege">
                 <img src="assets/images/logos/ButteCollege.png" width="100" alt="Butte College"/>
-                <h3>A.A. Studio Arts</h3>
-                <h3>A.A. Art History</h3>
+                <h2>A.A. Studio Arts</h2>
+                <h2>A.A. Art History</h2>
             </div>
             <div id="educationChicoState">
                 <img src="assets/images/logos/ChicoStateWildcat.png" width="100" alt="California State University, Chico"/>
-                <h3>B.S. Computer Information Systems</h3>
+                <h2>B.S. Computer Information Systems</h2>
                 <p>Minors: Computer Science, Business Administration</p>
             </div>
             <div id="educationPreHonors"></div>

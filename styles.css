@@ -4,3 +4,8 @@
 .carousel-item {
     height: 275px;
 }
+.nav-link.active {
+    border-bottom-color: white;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+}

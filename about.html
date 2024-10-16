@@ -40,15 +40,30 @@
             main {
                 display: grid;
                 width: 1080;
-                grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-                grid-template-rows: 1fr .5fr .5fr .5fr .5fr;
+                grid-template-columns: 1fr 1fr 1fr  1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+                grid-template-rows: 1fr 6rem .5fr .5fr .5fr;
                 margin: 0 2rem; 
             }
             .work {
                 background-color: darkgreen;
             }
+            .workDetail {
+                border-width: .25rem;
+                border-color: darkgreen;
+                border-style: solid;
+                border-radius: 5%;
+                padding: 1rem
+            }
             .education {
                 background-color: lightgreen;
+            }
+            .educationDetail {
+                margin: 1rem;
+                border-width: .25rem;
+                border-color: rgb(0, 128, 0);
+                border-style: dotted;
+                border-radius: 5%;
+                padding: 1rem
             }
             #hp {
                 grid-column-start: 1;
@@ -69,16 +84,6 @@
                 grid-column-start: 10;
                 grid-column-end:  13;
                 margin: 1rem;
-            }
-            #timelineHading {
-                grid-row-start: 2;
-                grid-row-end: 4;
-                grid-column-start: 1;
-                grid-column-end:  3;
-                align-content: center;
-                height: 6rem;
-                margin: 1rem;
-                visibility: hidden;
             }
             .year {
                 margin: .5rem 1rem;
@@ -134,15 +139,16 @@
             #educationButteCollege {
                 grid-row-start: 3;
                 grid-row-end: 4;
-                grid-column-start: 4;
-                grid-column-end: 8;
+                grid-column-start: 6;
+                grid-column-end: 7;
                 text-align: center;
             }
             #educationChicoState {
+                position: relative;
                 grid-row-start: 3;
                 grid-row-end: 4;
-                grid-column-start: 8;
-                grid-column-end: 12;
+                grid-column-start: 7;
+                grid-column-end: 10;
                 text-align: center;
                 padding-left: 1rem;
             }
@@ -173,7 +179,7 @@
                 grid-row-end: 6;
                 grid-column-start: 1;
                 grid-column-end:  13;
-                margin: 0 1rem;
+                margin: 3rem 1rem;
             }
             .certification {
                 flex-grow: 1;
@@ -195,6 +201,7 @@
                 list-style-type:circle;
                 display: flex;
                 flex-wrap: wrap;
+                padding-left: 0;
             }
             .skills > li {
                 margin: 0 1rem;
@@ -278,7 +285,7 @@
             <p id="phone">+1 408 242 4313</p>
         </header>
         <main>
-            <div id="hp">
+            <div id="hp" class="workDetail">
                 <img src="assets/images/logos/hpe.png" height="100" alt="Hewlett Packard Enterprise"/>
                 <h2>Support Engineer > Manager > QA Engineer</h2>
                 <ul class="skills">
@@ -304,7 +311,7 @@
                 </ul>
             </div>
 
-            <div id="powerschool">
+            <div id="powerschool" class="workDetail">
                 <img src="assets/images/logos/powerschool.png" height="100" alt="PowerSchool"/>
                 <h2>QA Intern</h2>
                 <ul class="skills">
@@ -315,7 +322,7 @@
                 </ul>
             </div>
 
-            <div id="chicostate">
+            <div id="chicostate" class="workDetail">
                 <img src="assets/images/logos/ChicoStateWildcat.png" height="100" alt="Chico State"/>
                 <h2>Student IT Assistant</h2>
                 <ul class="skills">
@@ -329,7 +336,7 @@
                 </ul>
             </div>
 
-            <div id="clockshark">
+            <div id="clockshark" class="workDetail">
                 <img src="assets/images/logos/clockshark.png" height="100" alt="ClockShark"/>
                 <h2>Senior QA Engineer</h2>
                 <ul class="skills">
@@ -348,10 +355,6 @@
                     <li>BitBar</li>
                     <li>HeadSpin</li>
                 </ul>
-            </div>
-
-            <div id="timelineHading">
-                <h2>Experience & Education</h2>
             </div>
             <div id="timelineHPE" class="workTimeline">
                 <hr>
@@ -372,19 +375,18 @@
                 <p class="year">2021</p>
             </div>
             
-            <div id="educationButteCollege">
+            <div id="educationButteCollege" class="educationDetail">
                 <img src="assets/images/logos/ButteCollege.png" width="100" alt="Butte College"/>
-                <h2>A.A. Studio Arts</h2>
-                <h2>A.A. Art History</h2>
+                <h2>A.A. Arts</h2>
             </div>
-            <div id="educationChicoState">
-                <img src="assets/images/logos/ChicoStateWildcat.png" width="100" alt="California State University, Chico"/>
+            <div id="educationChicoState" class="educationDetail">
+                <img id="csuLogo" src="assets/images/logos/ChicoStateWildcat.png" width="100" alt="California State University, Chico"/>
                 <h2>B.S. Computer Information Systems</h2>
-                <p>Minors: Computer Science, Business Administration</p>
+                <p>Minors: Computer Science | Business Administration</p>
             </div>
             <div id="educationPreHonors"></div>
-            <div id="educationHonors">
-                <img src="assets/images/logos/upe.jpg" width="500" alt="Upsilon Pi Epsion Society for the Computing and Information Systems"/>
+            <div id="educationHonors" class="educationDetail">
+                <img src="assets/images/logos/upe.jpg" width="80%" alt="Upsilon Pi Epsion Society for the Computing and Information Systems"/>
             </div>
             <div id="educationPostHonors"></div>
             <div id="certifications">    

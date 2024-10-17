@@ -41,7 +41,7 @@
                 display: grid;
                 width: 1080;
                 grid-template-columns: 1fr 1fr 1fr  1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-                grid-template-rows: 1fr 6rem .5fr 180px .5fr;
+                grid-template-rows: auto 6rem auto auto auto;
                 margin: 0 2rem; 
             }
             .work {
@@ -288,73 +288,131 @@
             <div id="hp" class="workDetail">
                 <img src="assets/images/logos/hpe.png" height="100" alt="Hewlett Packard Enterprise"/>
                 <h2>Support Engineer > Manager > QA Engineer</h2>
-                <ul class="skills">
-                    <li>Java</li>
-                    <li>Bash</li>
-                    <li>TCL</li>
-                    <li>SQL</li>
-                    <li>NoSQL</li>
-                    <li>Selenium</li>
-                    <li>Linux</li>
-                    <li>Windows</li>
-                    <li>Jira</li>
-                    <li>Quality Center</li>
-                    <li>SIEM</li>
-                    <li>ArcSight</li>
-                    <li>Public Speaking</li>
-                    <li>Exploratory Testing</li>
-                    <li>Troubleshooting</li>
-                    <li>Root Cause Analysis</li>
-                    <li>Training</li>
-                    <li>Technical Writing</li>
-                    <li>Leadership</li>
-                </ul>
+                <div class="accordion accordion-flush" id="skillsHP">
+                    <h2>
+                        <div class="accordion-item">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSkillsHP" aria-expanded="true" aria-controls="collapseSkillsHP">
+                               Skills
+                              </button>
+                        </div>
+                    </h2>
+                    <div id="collapseSkillsHP" class="accordion-collapse collapse" aria-labelledby="skillsHP" data-bs-parent="#skillsHP">
+                        <div class="accordion-body">
+                            <ul class="skills">
+                                <li>Java</li>
+                                <li>Bash</li>
+                                <li>TCL</li>
+                                <li>SQL</li>
+                                <li>NoSQL</li>
+                                <li>Selenium</li>
+                                <li>Linux</li>
+                                <li>Windows</li>
+                                <li>AWS</li>
+                                <li>Jira</li>
+                                <li>Quality Center</li>
+                                <li>SIEM</li>
+                                <li>ArcSight</li>
+                                <li>Public Speaking</li>
+                                <li>Exploratory Testing</li>
+                                <li>Troubleshooting</li>
+                                <li>Root Cause Analysis</li>
+                                <li>Training</li>
+                                <li>Technical Writing</li>
+                                <li>Leadership</li>
+                            </ul>
+                        </div>
+                      </div>
+                </div>
             </div>
 
             <div id="powerschool" class="workDetail">
                 <img src="assets/images/logos/powerschool.png" height="100" alt="PowerSchool"/>
                 <h2>QA Intern</h2>
-                <ul class="skills">
-                    <li>Java</li>
-                    <li>Git</li>
-                    <li>Selenium</li>
-                    <li>SharePoint</li>
-                </ul>
+                
+                <div class="accordion accordion-flush" id="skillsPowerSchool">
+                    <h2>
+                        <div class="accordion-item">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSkillsPowerSchool" aria-expanded="true" aria-controls="collapseSkillsPowerSchool">
+                               Skills
+                              </button>
+                        </div>
+                    </h2>
+                    <div id="collapseSkillsPowerSchool" class="accordion-collapse collapse" aria-labelledby="skillsPowerSchool" data-bs-parent="#skillsPowerSchool">
+                        <div class="accordion-body">
+                            <ul class="skills">
+                                <li>Java</li>
+                                <li>Git</li>
+                                <li>Selenium</li>
+                                <li>SharePoint</li>
+                                <li>Technical Training</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div id="chicostate" class="workDetail">
                 <img src="assets/images/logos/ChicoStateWildcat.png" height="100" alt="Chico State"/>
                 <h2>Student IT Assistant</h2>
-                <ul class="skills">
-                    <li>Personas</li>
-                    <li>User Journey</li>
-                    <li>Entity Relationship Diagrams</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>SQL</li>
-                    <li>MS Access</li>
-                </ul>
+                
+                <div class="accordion accordion-flush" id="skillsCSU">
+                    <h2>
+                        <div class="accordion-item">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSkillsCSU" aria-expanded="true" aria-controls="collapseSkillsCSU">
+                               Skills
+                            </button>
+                        </div>
+                    </h2>
+                    <div id="collapseSkillsCSU" class="accordion-collapse collapse" aria-labelledby="skillsCSU" data-bs-parent="#skillsCSU">
+                        <div class="accordion-body">
+                            <ul class="skills">
+                                <li>Personas</li>
+                                <li>User Journey</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>SQL</li>
+                                <li>Entity Relationship Diagrams</li>
+                                <li>MS Access</li>
+                                <li>Office 365</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div id="clockshark" class="workDetail">
                 <img src="assets/images/logos/clockshark.png" height="100" alt="ClockShark"/>
                 <h2>Senior QA Engineer</h2>
-                <ul class="skills">
-                    <li>Figma</li>
-                    <li>C#</li>
-                    <li>Python</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>SQL</li>
-                    <li>Selenium</li>
-                    <li>Appium</li>
-                    <li>Azure DevOps</li>
-                    <li>Azure Test Plans</li>
-                    <li>Kobiton</li>
-                    <li>BitBar</li>
-                    <li>HeadSpin</li>
-                </ul>
+                
+                <div class="accordion accordion-flush" id="skillsClockShark">
+                    <h2>
+                        <div class="accordion-item">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSkillsClockShark" aria-expanded="true" aria-controls="collapseSkillsClockShark">
+                               Skills
+                            </button>
+                        </div>
+                    </h2>
+                    <div id="collapseSkillsClockShark" class="accordion-collapse collapse" aria-labelledby="skillsClockShark" data-bs-parent="#skillsClockShark">
+                        <div class="accordion-body">
+                            <ul class="skills">
+                                <li>Figma</li>
+                                <li>C#</li>
+                                <li>Python</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>SQL</li>
+                                <li>Selenium</li>
+                                <li>Appium</li>
+                                <li>Azure DevOps</li>
+                                <li>Azure Test Plans</li>
+                                <li>Kobiton</li>
+                                <li>BitBar</li>
+                                <li>HeadSpin</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div id="timelineHPE" class="workTimeline">
                 <hr>
@@ -374,20 +432,50 @@
                 <hr>
                 <p class="year">2021</p>
             </div>
-            
             <div id="educationButteCollege" class="educationDetail">
                 <img src="assets/images/logos/ButteCollege.png" width="100" alt="Butte College"/>
-                <h2>A.A. Arts</h2>
+                <div class="accordion accordion-flush" id="butte">
+                    <h2>
+                        <div class="accordion-item">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseButte" aria-expanded="true" aria-controls="collapseButte">
+                               Associate in Arts
+                              </button>
+                        </div>
+                    </h2>
+                    <div id="collapseButte" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#butte">
+                        <div class="accordion-body">
+                            <p>Major: Studio Arts</p>
+                            <p>Major: Art History</p>
+                        </div>
+                      </div>
+                </div>
             </div>
             <div id="educationChicoState" class="educationDetail">
                 <img id="csuLogo" src="assets/images/logos/ChicoStateWildcat.png" width="100" alt="California State University, Chico"/>
-                <h2>B.S. Computer Information Systems</h2>
-                <p>Minors: Computer Science | Business Administration</p>
+                <div class="accordion accordion-flush" id="csu">
+                    <h2>
+                        <div class="accordion-item">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCSU" aria-expanded="true" aria-controls="collapseCSU">
+                                Bachelor of Science
+                              </button>
+                        </div>
+                    </h2>
+                    <div id="collapseCSU" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#csu">
+                        <div class="accordion-body">
+                            <p>Major: Computer Information Systems</p>
+                            <p>Minor: Business Administration</p>
+                            <p>Minor: Computer Science</p>
+                            <p>Overall GPA: 3.5</p>
+                            <img src="assets/images/logos/upe.jpg" width="98%" alt="Upsilon Pi Epsion Society for the Computing and Information Systems"/>
+                        </div>
+                      </div>
+                </div>
+                
             </div>
-            <div id="educationPreHonors"></div>
+            <!--<div id="educationPreHonors"></div>
             <div id="educationHonors" class="educationDetail">
                 <img src="assets/images/logos/upe.jpg" height="110px" alt="Upsilon Pi Epsion Society for the Computing and Information Systems"/>
-            </div>
+            </div>-->
             <div id="educationPostHonors"></div>
             <div id="certifications">    
                 <figure class="certification">

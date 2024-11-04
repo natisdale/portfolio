@@ -10,246 +10,9 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="styles.css"/>
+        <link rel="stylesheet" href="about.css">
     </head>
-    <style>
-        @media print, screen {
-            html {
-                min-width: 1024px;
-            }
-            header {
-                text-align: center;
-                margin: 2rem;
-            }
-            #phone {
-                display: none;
-            }
-            h1 {
-                color: darkgreen;
-                font-family: "K2D", sans-serif;
-                font-weight: 700;
-                font-style: normal;
-                font-size: 4rem;
-            }
-            h2 {
-                font-size: larger;
-                font-family: "K2D", sans-serif;
-                font-weight: 400;
-                font-style: normal;
-                padding-top: 1rem;
-            }
-            main {
-                display: grid;
-                width: 1080;
-                grid-template-columns: 1fr 1fr 1fr  1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-                grid-template-rows: auto 6rem auto auto auto;
-                margin: 0 2rem; 
-            }
-            .work {
-                background-color: darkgreen;
-            }
-            .workDetail {
-                border-width: .25rem;
-                border-color: darkgreen;
-                border-style: dotted;
-                border-radius: 35px;
-                padding: 1rem
-            }
-            .education {
-                background-color: lightgreen;
-            }
-            .educationDetail {
-                margin: 1rem;
-                border-width: .25rem;
-                border-color: rgb(0, 128, 0);
-                border-style: dotted;
-                border-radius: 35px;
-                padding: 1rem
-            }
-            #hp {
-                grid-column-start: 1;
-                grid-column-end:  6;
-                margin: 1rem;
-            }
-            #powerschool {
-                grid-column-start: 7;
-                grid-column-end:  8;
-                margin: 1em;
-            }
-            #chicostate {
-                grid-column-start: 8;
-                grid-column-end:  10;
-                margin: 1rem;
-            }
-            #clockshark {
-                grid-column-start: 10;
-                grid-column-end:  13;
-                margin: 1rem;
-            }
-            .year {
-                margin: .5rem 1rem;
-                color: white;
-            }
-            .workTimeline {
-                background-color: darkgreen;
-            }
-
-            #timelineHPE {
-                grid-row-start: 2;
-                grid-row-end: 4;
-                grid-column-start: 1;
-                grid-column-end: 6;
-                height: 6rem;
-                align-content: end;
-            }
-            #timelineSabbatical {
-                background-color: green;
-                grid-row-start: 2;
-                grid-row-end: 4;
-                grid-column-start: 6;
-                grid-column-end: 10;
-                height: 6rem;
-                align-content: end;
-            }
-            #timelinePS {
-                grid-row-start: 2;
-                grid-row-end: 4;
-                grid-column-start: 7;
-                grid-column-end: 8;
-                height: 3rem;
-                align-content: end;
-                margin: 0rem 1rem;
-            }
-            #timelineChicoState {
-                grid-row-start: 2;
-                grid-row-end: 4;
-                grid-column-start: 8;
-                grid-column-end: 10;
-                height: 3rem;
-                align-content: end;
-                margin: 0rem 1rem;
-            }
-            #timelineClockShark {
-                grid-row-start: 2;
-                grid-row-end: 4;
-                grid-column-start: 10;
-                grid-column-end: 13;
-                height: 6rem;
-                align-content: end;
-            }
-            #educationButteCollege {
-                grid-row-start: 3;
-                grid-row-end: 4;
-                grid-column-start: 6;
-                grid-column-end: 7;
-                text-align: center;
-            }
-            #educationChicoState {
-                position: relative;
-                grid-row-start: 3;
-                grid-row-end: 4;
-                grid-column-start: 7;
-                grid-column-end: 10;
-                text-align: center;
-                padding-left: 1rem;
-            }
-            #educationPreHonors {
-                grid-row-start: 4;
-                grid-row-end: 5;
-                grid-column-start: 1;
-                grid-column-end: 6;
-                text-align: center;
-            }
-            #educationHonors {
-                grid-row-start: 4;
-                grid-row-end: 5;
-                grid-column-start: 6;
-                grid-column-end: 10;
-                text-align: center;
-            }
-            #educationPostHonors {
-                grid-row-start: 4;
-                grid-row-end: 5;
-                grid-column-start: 10;
-                grid-column-end: 13;
-                text-align: center;
-            }
-            #certifications {
-                display:flex;
-                grid-row-start: 5;
-                grid-row-end: 6;
-                grid-column-start: 1;
-                grid-column-end:  13;
-                margin: 3rem 1rem;
-            }
-            .certification {
-                flex-grow: 1;
-            }
-
-            figure {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-            }
-            hr {
-                display: none;
-            }
-            #social {
-                margin-right: 3rem;
-            }
-            .skills {
-                list-style-type:circle;
-                display: flex;
-                flex-wrap: wrap;
-                padding-left: 0;
-            }
-            .skills > li {
-                margin: 0 1rem;
-            }
-            .nav-link.active {
-                border-bottom-color: white;
-                border-bottom-width: 2px;
-                border-bottom-style: solid;
-            }
-        }
-
-        @media print {
-            html {
-                font-size: 11pt;
-            }
-            .navbar {
-                display: none;
-            }
-            footer *{
-                display: none;
-            }
-            header {
-                display: flex;
-            }
-            #phone {
-                display: inline;
-            }
-            header p {
-                flex-grow: 1;
-                text-align: right;
-            }
-            .work {
-                height: 1rem;
-            }
-            .education {
-                height: 1rem;
-            }
-            hr {
-                display: block;
-                border-width: 5px;
-                border-style: solid;
-                border-color: darkgreen;
-            }
-            .year {
-                color: black;;
-            }
-        }
-    </style>
     <body>
         <nav class="navbar navbar-expand-lg navbar-dark bg-black" aria-label="navbar">
             <div class="container-fluid">
@@ -285,18 +48,18 @@
             <p id="phone">+1 408 242 4313</p>
         </header>
         <main>
-            <div id="hp" class="workDetail">
-                <img src="assets/images/logos/hpe.png" height="100" alt="Hewlett Packard Enterprise"/>
-                <h2>Support Engineer > Manager > QA Engineer</h2>
+            <article id="hp" class="workDetail">
+                <h2><img src="assets/images/logos/hpe.png" height="100" alt="Hewlett Packard Enterprise"/></h2>
+                <h3>Support Engineer > Manager > QA Engineer</h3>
                 <div class="accordion accordion-flush" id="skillsHP">
-                    <h2>
+                    <summary>
                         <div class="accordion-item">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSkillsHP" aria-expanded="true" aria-controls="collapseSkillsHP">
                                Skills
                               </button>
                         </div>
-                    </h2>
-                    <div id="collapseSkillsHP" class="accordion-collapse collapse" aria-labelledby="skillsHP" data-bs-parent="#skillsHP">
+                    </summary>
+                    <details id="collapseSkillsHP" class="accordion-collapse collapse" aria-labelledby="skillsHP" data-bs-parent="#skillsHP">
                         <div class="accordion-body">
                             <ul class="skills">
                                 <li>Java</li>
@@ -321,23 +84,22 @@
                                 <li>Leadership</li>
                             </ul>
                         </div>
-                      </div>
+                    </details>
                 </div>
-            </div>
+            </article>
 
-            <div id="powerschool" class="workDetail">
-                <img src="assets/images/logos/powerschool.png" height="100" alt="PowerSchool"/>
-                <h2>QA Intern</h2>
-                
+            <article id="powerschool" class="workDetail">
+                <h2><img src="assets/images/logos/powerschool.png" height="100" alt="PowerSchool"/></h2>
+                <h3>QA Intern</h3>
                 <div class="accordion accordion-flush" id="skillsPowerSchool">
-                    <h2>
+                    <summary>
                         <div class="accordion-item">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSkillsPowerSchool" aria-expanded="true" aria-controls="collapseSkillsPowerSchool">
                                Skills
                               </button>
                         </div>
-                    </h2>
-                    <div id="collapseSkillsPowerSchool" class="accordion-collapse collapse" aria-labelledby="skillsPowerSchool" data-bs-parent="#skillsPowerSchool">
+                    </summary>
+                    <details id="collapseSkillsPowerSchool" class="accordion-collapse collapse" aria-labelledby="skillsPowerSchool" data-bs-parent="#skillsPowerSchool">
                         <div class="accordion-body">
                             <ul class="skills">
                                 <li>Java</li>
@@ -346,24 +108,24 @@
                                 <li>SharePoint</li>
                                 <li>Technical Training</li>
                             </ul>
-                        </div>
+                        </details>
                     </div>
                 </div>
-            </div>
+            </article>
 
-            <div id="chicostate" class="workDetail">
-                <img src="assets/images/logos/ChicoStateWildcat.png" height="100" alt="Chico State"/>
-                <h2>Student IT Assistant</h2>
+            <article id="chicostate" class="workDetail">
+                <h2><img src="assets/images/logos/ChicoStateWildcat.png" height="100" alt="Chico State"/></h2>
+                <h3>Student IT Assistant</h3>
                 
                 <div class="accordion accordion-flush" id="skillsCSU">
-                    <h2>
+                    <summary>
                         <div class="accordion-item">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSkillsCSU" aria-expanded="true" aria-controls="collapseSkillsCSU">
                                Skills
                             </button>
                         </div>
-                    </h2>
-                    <div id="collapseSkillsCSU" class="accordion-collapse collapse" aria-labelledby="skillsCSU" data-bs-parent="#skillsCSU">
+                    </summary>
+                    <details id="collapseSkillsCSU" class="accordion-collapse collapse" aria-labelledby="skillsCSU" data-bs-parent="#skillsCSU">
                         <div class="accordion-body">
                             <ul class="skills">
                                 <li>Personas</li>
@@ -376,23 +138,22 @@
                                 <li>Office 365</li>
                             </ul>
                         </div>
-                    </div>
+                    </details>
                 </div>
-            </div>
+            </article>
 
-            <div id="clockshark" class="workDetail">
-                <img src="assets/images/logos/clockshark.png" height="100" alt="ClockShark"/>
-                <h2>Senior QA Engineer</h2>
-                
+            <article id="clockshark" class="workDetail">
+                <h2><img src="assets/images/logos/clockshark.png" height="100" alt="ClockShark"/></h2>
+                <h3>Senior QA Engineer</h3>
                 <div class="accordion accordion-flush" id="skillsClockShark">
-                    <h2>
+                    <summary>
                         <div class="accordion-item">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSkillsClockShark" aria-expanded="true" aria-controls="collapseSkillsClockShark">
                                Skills
                             </button>
                         </div>
-                    </h2>
-                    <div id="collapseSkillsClockShark" class="accordion-collapse collapse" aria-labelledby="skillsClockShark" data-bs-parent="#skillsClockShark">
+                    </summary>
+                    <details id="collapseSkillsClockShark" class="accordion-collapse collapse" aria-labelledby="skillsClockShark" data-bs-parent="#skillsClockShark">
                         <div class="accordion-body">
                             <ul class="skills">
                                 <li>Figma</li>
@@ -411,9 +172,10 @@
                                 <li>HeadSpin</li>
                             </ul>
                         </div>
-                    </div>
+                    </details>
                 </div>
-            </div>
+            </article>
+
             <div id="timelineHPE" class="workTimeline">
                 <hr>
                 <p class="year">2009</p>
@@ -432,35 +194,35 @@
                 <hr>
                 <p class="year">2021</p>
             </div>
-            <div id="educationButteCollege" class="educationDetail">
-                <img src="assets/images/logos/ButteCollege.png" width="100" alt="Butte College"/>
+            <article id="educationButteCollege" class="educationDetail">
+                <h2><img src="assets/images/logos/ButteCollege.png" width="100" alt="Butte College"/></h2>
                 <div class="accordion accordion-flush" id="butte">
-                    <h2>
+                    <summary>
                         <div class="accordion-item">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseButte" aria-expanded="true" aria-controls="collapseButte">
                                Associate in Arts
                               </button>
                         </div>
-                    </h2>
-                    <div id="collapseButte" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#butte">
+                    </summary>
+                    <details id="collapseButte" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#butte">
                         <div class="accordion-body">
                             <p>Major: Studio Arts</p>
                             <p>Major: Art History</p>
                         </div>
-                      </div>
+                    </details>
                 </div>
-            </div>
-            <div id="educationChicoState" class="educationDetail">
-                <img id="csuLogo" src="assets/images/logos/ChicoStateWildcat.png" width="100" alt="California State University, Chico"/>
+            </article>
+            <article id="educationChicoState" class="educationDetail">
+                <h2><img id="csuLogo" src="assets/images/logos/ChicoStateWildcat.png" width="100" alt="California State University, Chico"/></h2>
                 <div class="accordion accordion-flush" id="csu">
-                    <h2>
+                    <summary>
                         <div class="accordion-item">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCSU" aria-expanded="true" aria-controls="collapseCSU">
                                 Bachelor of Science
                               </button>
                         </div>
-                    </h2>
-                    <div id="collapseCSU" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#csu">
+                    </summary>
+                    <details id="collapseCSU" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#csu">
                         <div class="accordion-body">
                             <p>Major: Computer Information Systems</p>
                             <p>Minor: Business Administration</p>
@@ -468,77 +230,71 @@
                             <p>Overall GPA: 3.5</p>
                             <img src="assets/images/logos/upe.jpg" width="98%" alt="Upsilon Pi Epsion Society for the Computing and Information Systems"/>
                         </div>
-                      </div>
+                    </details>
                 </div>
-                
-            </div>
-            <!--<div id="educationPreHonors"></div>
-            <div id="educationHonors" class="educationDetail">
-                <img src="assets/images/logos/upe.jpg" height="110px" alt="Upsilon Pi Epsion Society for the Computing and Information Systems"/>
-            </div>-->
-            <div id="educationPostHonors"></div>
-            <div id="certifications">    
+            </article>
+            <article id="certifications">    
                 <figure class="certification">
                     <a href="https://www.credly.com/badges/1ceb003e-4dd5-47db-bf43-ea9c7dae3821/public_url">
                         <img src="assets/images/certifications/CompTIA_CTT_110px.png" width="100"alt="CompTIA CTT+"/>
                     </a>
-                    <caption>Training</caption>
+                    <figcaption>Training</figcaption>
                 </figure>
                 <figure class="certification">
                     <a href="https://www.credly.com/badges/643192dc-ebdc-41e6-b76a-2f307f8986ff/public_url">
                         <img src="assets/images/certifications/CompTIA_Linux_110px.png" width="100"alt="CompTIA Linux+"/>
                     </a>
-                    <caption>Linux</caption>
+                    <figcaption>Linux</figcaption>
                 </figure>
                 <figure class="certification">
                     <a href="https://www.credly.com/badges/3d5c65bd-64fc-4798-9752-d1b5778f3744/public_url">
                         <img src="assets/images/certifications/cissp125px.png" width="100"alt="Certified Information Systems Security Professioal (CISSP)"/>
                     </a>
-                    <caption>InfoSec</caption>
+                    <figcaption>InfoSec</figcaption>
                 </figure>
                 <figure class="certification">
                     <a href="https://www.credly.com/badges/7f4d1154-824d-43f2-96b6-8b0d739b8e03/public_url">
                         <img src="assets/images/certifications/csslp125px.png" width="100"alt="Certified Secure Software Lifecycle Professioal (CSSLP)"/>
                     </a>
-                    <caption>DevSec</caption>
+                    <figcaption>DevSec</figcaption>
                 </figure>
                 <figure class="certification">
                     <a href="https://www.credly.com/badges/69a84350-f18f-4551-99b7-8d18c9a64b76/public_url">
                         <img src="assets/images/certifications/python102px.png" width="100"alt="Python"/>
                     </a>
-                    <caption>Python</caption>
+                    <figcaption>Python</figcaption>
                 </figure>
                 <figure class="certification">
                     <a href="https://freecodecamp.org/certification/fccae837459-fa85-4d5b-8e4a-e96ec0b79d60/foundational-c-sharp-with-microsoft">
                         <img src="assets/images/certifications/microsoft-certified-fundamentals-badge.svg" width="100" width="100" alt="C#"/>
                     </a>
-                    <caption>C#</caption>
+                    <figcaption>C#</figcaption>
                 </figure>
                 <figure class="certification">
                     <a href="https://atsqa.org/certified-testers/profile/44ceb12603164b919e5b475056086a79">
                         <img src="assets/images/certifications/CTFL-AT-badge.png" width="100"alt="ISTQB Agile Tester"/>
                     </a>
-                    <caption>Agile</caption>
+                    <figcaption>Agile</figcaption>
                 </figure>
                 <figure class="certification">
                     <a href="https://atsqa.org/certified-testers/profile/44ceb12603164b919e5b475056086a79">
                         <img src="assets/images/certifications/CT-MAT-badge.png" width="100"alt="ISTQB Mobile Application Tester"/>
                     </a>
-                    <caption>Mobile Apps</caption>
+                    <figcaption>Mobile Apps</figcaption>
                 </figure>
                 <figure class="certification">
                     <a href="https://www.credly.com/badges/b23c0a9f-3614-4178-9c65-a92bd0cf8eb8/public_url">
                         <img src="assets/images/certifications/microsoft-certified-azure-fundamentals.png" width="100"alt="Azure Artificial Intelligence Fundamentals"/>
                     </a>
-                    <caption>Azure</caption>
+                    <figcaption>Azure</figcaption>
                 </figure>
                 <figure id="certification">
                     <a href="https://www.credly.com/badges/b6e3cc55-0bfc-48ae-9397-e43bd32415fc/public_url">
                         <img src="assets/images/certifications/GoogleUserUXDesign.png" width="100" alt="Google UX Design Professional"/>
                     </a>
-                    <caption>UX Design</caption>
+                    <figcaption>UX Design</figcaption>
                 </figure>
-            </div>
+            </article>
         </main>
 
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">

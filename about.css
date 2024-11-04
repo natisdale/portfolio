@@ -1,0 +1,222 @@
+@media print, screen {
+    html {
+        min-width: 1024px;
+    }
+    header {
+        text-align: center;
+        margin: 2rem;
+    }
+    #phone {
+        display: none;
+    }
+    main {
+        display: grid;
+        width: 1080;
+        grid-template-columns: 1fr 1fr 1fr  1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto 6rem auto auto auto;
+        margin: 0 2rem; 
+    }
+    .work {
+        background-color: darkgreen;
+    }
+    .workDetail {
+        border-width: .25rem;
+        border-color: darkgreen;
+        border-style: dotted;
+        border-radius: 35px;
+        padding: 1rem
+    }
+    .education {
+        background-color: lightgreen;
+    }
+    .educationDetail {
+        margin: 1rem;
+        border-width: .25rem;
+        border-color: rgb(0, 128, 0);
+        border-style: dotted;
+        border-radius: 35px;
+        padding: 1rem
+    }
+    #hp {
+        grid-column-start: 1;
+        grid-column-end:  6;
+        margin: 1rem;
+    }
+    #powerschool {
+        grid-column-start: 7;
+        grid-column-end:  8;
+        margin: 1em;
+    }
+    #chicostate {
+        grid-column-start: 8;
+        grid-column-end:  10;
+        margin: 1rem;
+    }
+    #clockshark {
+        grid-column-start: 10;
+        grid-column-end:  13;
+        margin: 1rem;
+    }
+    .year {
+        margin: .5rem 1rem;
+        color: white;
+    }
+    .workTimeline {
+        background-color: darkgreen;
+    }
+
+    #timelineHPE {
+        grid-row-start: 2;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 6;
+        height: 6rem;
+        align-content: end;
+    }
+    #timelineSabbatical {
+        background-color: green;
+        grid-row-start: 2;
+        grid-row-end: 4;
+        grid-column-start: 6;
+        grid-column-end: 10;
+        height: 6rem;
+        align-content: end;
+    }
+    #timelinePS {
+        grid-row-start: 2;
+        grid-row-end: 4;
+        grid-column-start: 7;
+        grid-column-end: 8;
+        height: 3rem;
+        align-content: end;
+        margin: 0rem 1rem;
+    }
+    #timelineChicoState {
+        grid-row-start: 2;
+        grid-row-end: 4;
+        grid-column-start: 8;
+        grid-column-end: 10;
+        height: 3rem;
+        align-content: end;
+        margin: 0rem 1rem;
+    }
+    #timelineClockShark {
+        grid-row-start: 2;
+        grid-row-end: 4;
+        grid-column-start: 10;
+        grid-column-end: 13;
+        height: 6rem;
+        align-content: end;
+    }
+    #educationButteCollege {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 6;
+        grid-column-end: 7;
+        text-align: center;
+    }
+    #educationChicoState {
+        position: relative;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 7;
+        grid-column-end: 10;
+        text-align: center;
+        padding-left: 1rem;
+    }
+    #educationPreHonors {
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start: 1;
+        grid-column-end: 6;
+        text-align: center;
+    }
+    #educationHonors {
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start: 6;
+        grid-column-end: 10;
+        text-align: center;
+    }
+    #educationPostHonors {
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start: 10;
+        grid-column-end: 13;
+        text-align: center;
+    }
+    #certifications {
+        display:flex;
+        grid-row-start: 5;
+        grid-row-end: 6;
+        grid-column-start: 1;
+        grid-column-end:  13;
+        margin: 3rem 1rem;
+    }
+    .certification {
+        flex-grow: 1;
+    }
+    figure {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    hr {
+        display: none;
+    }
+    #social {
+        margin-right: 3rem;
+    }
+    .skills {
+        list-style-type:circle;
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 0;
+    }
+    .skills > li {
+        margin: 0 1rem;
+    }
+    .nav-link.active {
+        border-bottom-color: white;
+        border-bottom-width: 2px;
+        border-bottom-style: solid;
+    }
+}
+
+@media print {
+    html {
+        font-size: 11pt;
+    }
+    .navbar {
+        display: none;
+    }
+    footer *{
+        display: none;
+    }
+    header {
+        display: flex;
+    }
+    #phone {
+        display: inline;
+    }
+    header p {
+        flex-grow: 1;
+        text-align: right;
+    }
+    .work {
+        height: 1rem;
+    }
+    .education {
+        height: 1rem;
+    }
+    hr {
+        display: block;
+        border-width: 5px;
+        border-style: solid;
+        border-color: darkgreen;
+    }
+    .year {
+        color: black;;
+    }
+}

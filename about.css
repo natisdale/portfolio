@@ -64,7 +64,6 @@
     .workTimeline {
         background-color: darkgreen;
     }
-
     #timelineHPE {
         grid-row-start: 2;
         grid-row-end: 4;
@@ -81,6 +80,15 @@
         grid-column-end: 10;
         height: 6rem;
         align-content: end;
+        animation: sabbatical 5s;
+    }
+    @keyframes sabbatical {
+        0% {
+            background-color: darkgreen;
+        }
+        100% {
+            background-color: green;
+        }
     }
     #timelinePS {
         grid-row-start: 2;

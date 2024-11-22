@@ -20,21 +20,16 @@
         background-color: darkgreen;
     }
     .workDetail {
-        border-width: .25rem;
-        border-color: darkgreen;
-        border-style: dotted;
-        border-radius: 35px;
         padding: 1rem
+    }
+    #skillsHP, #skillsPowerSchool, #skillsCSU, #skillsClockShark {
+        display: none;
     }
     .education {
         background-color: lightgreen;
     }
     .educationDetail {
         margin: 1rem;
-        border-width: .25rem;
-        border-color: rgb(0, 128, 0);
-        border-style: dotted;
-        border-radius: 35px;
         padding: 1rem
     }
     #hp {

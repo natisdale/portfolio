@@ -116,3 +116,91 @@ h2 {
     font-weight: 800;
     font-style: italic;
   }
+
+  /*
+* image-accordion
+*/
+.image-accordion {
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+}
+.image-accordion .button {
+    color: var(--color-white);
+}
+.image-accordion__item {
+    overflow: hidden;
+    background-size: cover;
+    color: var(--color-white);
+    padding: 2rem 2rem 2rem 2rem;
+    height: 30rem;
+    width: 20%;
+    align-content: end;
+}
+.image-accordion__content {
+    background-color: #f5e29d;
+    width: fit-content;
+    border-radius: 1rem;
+    padding: .5rem .75rem;;
+}
+.image-accordion__item:nth-child(1){
+    width:60%;
+    animation: resize-1 15s linear 0s infinite alternate;
+}
+.image-accordion__item:nth-child(1) * {
+    animation: toggle-visible-1 15s linear 0s infinite alternate;
+}
+.image-accordion__item:nth-child(2){
+    width: 20%;
+    animation: resize-2 15s linear 0s infinite alternate;
+}
+.image-accordion__item:nth-child(2) * {
+    animation: toggle-visible-2 15s linear 0s infinite alternate;
+}
+.image-accordion__item:nth-child(3) {
+    width: 20%;
+    animation: resize-1 15s linear 0s infinite alternate-reverse;
+}
+.image-accordion__item:nth-child(3) * {
+    animation: toggle-visible-3 15s linear 0s infinite alternate;
+}
+@keyframes resize-1 {
+    0% {width: 60%;}
+    32% {width: 60%;}
+    34% {width: 20%;}
+    100% {width: 20%;}    
+}
+@keyframes resize-2 {
+    0% {width: 20%;}
+    31% {width: 20%}
+    33% {width:60%;}
+    66% {width: 60%;}
+    68% {width: 20%;}
+    100% {width: 20%;}    
+}
+@keyframes resize-3 {
+    0% {width: 20%;}
+    64% {width:20%;}
+    66% {width: 60%;}
+    100% {width: 60%;}    
+}
+@keyframes toggle-visible-1 {
+    0% {visibility: visible;}
+    30% {visibility: visible;}
+    32% {visibility: hidden;}
+    100% {visibility: hidden;}   
+}
+@keyframes toggle-visible-2 {
+    0% {visibility: hidden;}
+    33% {visibility: hidden;}
+    35% {visibility: visible;}
+    64% {visibility: visible;}
+    66% {visibility: hidden;}
+    100% {visibility: hidden;}    
+}
+@keyframes toggle-visible-3 {
+    0% {visibility: hidden;}
+    66% {visibility: hidden;}
+    68% {visibility: visible;}
+    100% {visibility: visible;}    
+}
